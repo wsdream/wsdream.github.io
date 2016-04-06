@@ -1,87 +1,141 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-	<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/paperpagestyle.css" media="screen" />
+<html lang="en">
 
-	<!-- Custom CSS -->
-    <style type="text/css">
-		.header {
-		height: 185px;}
-    </style>
+<head>
 
-	<!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <title>[ICWS'12] WSP: A Network Coordinate based Web Service Positioning Framework for Response Time Prediction</title>
-  
-  </head>
 
-<body>   
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<div> 
-	<div class="main_container">
-	  <div class="header">   
-		  <h2>WSP: A Network Coordinate based Web Service Positioning Framework<br>for Response Time Prediction</h2>
-		  <a href="http://jiemingzhu.github.io" target="_blank">Jieming Zhu</a>,&nbsp;&nbsp;<a href="https://wiki.cse.cuhk.edu.hk/user/ykang/" target="_blank">Yu Kang</a>,&nbsp;&nbsp;<a href="https://wiki.cse.cuhk.edu.hk/user/zbzheng/" target="_blank">Zibin Zheng</a>,&nbsp;&nbsp;and <a href="http://www.cse.cuhk.edu.hk/lyu/" target="_blank">Michael R. Lyu</a><br>
-		  The Chinese University of Hong Kong<br>
-	  </div>
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
-	  <div class ="page_content">
-		<h2>Introduction </h2>
-        <p> With the rapid growth of Web services in recent
-			years, the optimal service selection from functionally-equivalent
-			service candidates has become more critical for building high
-			quality service-oriented systems. To provide accurate QoS
-			values for service selection, user-side QoS prediction thus
-			becomes an important research problem. Although collaborative ﬁltering based prediction approaches have been studied in several previous works, these methods suffer from the
-			limitation of the sparsity of available historical QoS data,
-			which greatly degrades the prediction accuracy. To address this
-			problem, this paper proposes a Web service positioning (WSP)
-			framework for response time prediction, which is one of the
-			most important QoS properties. In our approach, a small set of
-			landmarks are deployed to periodically monitor the response
-			times of the Web service candidates and provide references
-			to the numerous service users. By combining the advantages
-			of network coordinate based approaches and collaborative
-			ﬁltering based approaches, the response times between users
-			and Web services can be accurately predicted using their
-			corresponding Euclidean distances. Extensive experiments are
-			conducted based on our real-world QoS dataset collected on
-			PlanetLab, comprising about 359,400 response time values
-			from 200 users on 1,597 Web services. The experimental results
-			show that our WSP approach outperforms the other existing
-			approaches, especially when the historical data is sparse.</p>
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-			Read more about our paper: [<a href="http://jiemingzhu.github.io/pub/jmzhu_icws2012.pdf" target="_blank">Paper</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icws2012_slides.pptx" target="_blank">Slides</a>]
-			<br><br>
-		
-		<h2>Dataset </h2>
-		<p>This dataset is collected via the PlanetLab platform on Dec. 5 in 2011, comprising the RTTs between 200 distributed PlanetLab nodes and 1,597 Web services and also the RTTs between the 200 Planetlab nodes. The unit of each value is millisecond. Please refer to our paper for more information on the dataset collection.</p>
-		<a href="http://wsdream.github.io/dataset/icws2012_dataset" class="button">
-            <small>Download</small>
-            dataset
-        </a>
-		
-		The dataset package includes:<br>
-		1. "P2P" (298 KB): This file is a 200-by-200 data matrix, comprising RTTs between 200 PlanetLab nodes. This matrix is asymmetric.<br>
-		2. "W2P" (2.36 M): This file is a 1597-by-200 data matrix, comprising RTTs between 200 nodes and 1,597 Web service hosts.<br>
-		3. "node_list.txt" (6 KB): This file decribes the ID and address of each PlanetLab node.<br>
-		4. "WS_list.txt" (39 KB): This file decribes the ID and address of each Web service.<br>
-		5. "readme.txt" (2 KB): This file decribes the dataset in detail.<br><br>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-		If you use this dataset, please use the following reference to cite the dataset:
+</head>
 
-		<p>Jieming Zhu, Yu Kang, Zibin Zheng, and Michael R. Lyu, "<strong>WSP: A Network Coordinate based Web Service Positioning Framework for Response Time Prediction</strong>," in <em>Proc. of IEEE ICWS</em>, 2012, pp. 90-97. [<a href="http://dblp.uni-trier.de/rec/bibtex/conf/icws/ZhuKZL12" target="_blank">Bibtex</a>]</p><br>
+<body>
 
-	  <div class="horizontal_line"></div>
-	  <small>This page is maintained by <a href="https://github.com/WS-DREAM">WS-DREAM</a>, hosted on <a href="https://pages.github.com/">GitHub pages</a>. Last updated on 2014/3/21.</small>
-	  </div>
-  
-</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">WS-DREAM</a>
+            </div>
 
-</body></html>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>WSP: A Network Coordinate based Web Service Positioning Framework<br>for Response Time Prediction</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta"><a href="http://jiemingzhu.github.io" target="_blank">Jieming Zhu</a>,&nbsp;&nbsp;<a href="https://wiki.cse.cuhk.edu.hk/user/ykang/" target="_blank">Yu Kang</a>,&nbsp;&nbsp;<a href="https://wiki.cse.cuhk.edu.hk/user/zbzheng/" target="_blank">Zibin Zheng</a>,&nbsp;&nbsp;and <a href="http://www.cse.cuhk.edu.hk/lyu/" target="_blank">Michael R. Lyu</a><br><br>Department of Computer Science and Engineering<br>The Chinese University of Hong Kong</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>With the rapid growth of Web services in recent
+            years, the optimal service selection from functionally-equivalent
+            service candidates has become more critical for building high
+            quality service-oriented systems. To provide accurate QoS
+            values for service selection, user-side QoS prediction thus
+            becomes an important research problem. Although collaborative ﬁltering based prediction approaches have been studied in several previous works, these methods suffer from the
+            limitation of the sparsity of available historical QoS data,
+            which greatly degrades the prediction accuracy. To address this
+            problem, this paper proposes a Web service positioning (WSP)
+            framework for response time prediction, which is one of the
+            most important QoS properties. In our approach, a small set of
+            landmarks are deployed to periodically monitor the response
+            times of the Web service candidates and provide references
+            to the numerous service users. By combining the advantages
+            of network coordinate based approaches and collaborative
+            ﬁltering based approaches, the response times between users
+            and Web services can be accurately predicted using their
+            corresponding Euclidean distances. Extensive experiments are
+            conducted based on our real-world QoS dataset collected on
+            PlanetLab, comprising about 359,400 response time values
+            from 200 users on 1,597 Web services. The experimental results
+            show that our WSP approach outperforms the other existing
+            approaches, especially when the historical data is sparse.</p>
+
+                    <p>Read more from our paper: <br>
+                       -------------------------------<br>
+     
+                    Jieming Zhu, Yu Kang, Zibin Zheng, and Michael R. Lyu, "WSP: A Network Coordinate based Web Service Positioning Framework for Response Time Prediction," in <i>Proc. of IEEE International Conference on Web Services (<strong>ICWS</strong>)</i>, 2012.
+                    [<a href="http://jiemingzhu.github.io/pub/jmzhu_icws2012.pdf" target="_blank">Paper</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icws2012_slides.pptx" target="_blank">Slides</a>]</p>
+
+        <h2 class="section-heading">Dataset Release</h2>
+
+        <p>This dataset is collected via the PlanetLab platform on Dec. 5 in 2011, comprising the RTTs between 200 distributed PlanetLab nodes and 1,597 Web services and also the RTTs between the 200 Planetlab nodes. The unit of each value is millisecond. Please refer to our paper for more information on the dataset collection.</p>
+        <a href="http://wsdream.github.io/dataset/icws2012_dataset" target="_blank" class="button">Download dataset</a>
+        
+        List of contents of the dataset<br>
+        -----------------------------------<br>
+
+        1. "P2P" (298 KB): This file is a 200-by-200 data matrix, comprising RTTs between 200 PlanetLab nodes. This matrix is asymmetric.<br>
+        2. "W2P" (2.36 M): This file is a 1597-by-200 data matrix, comprising RTTs between 200 nodes and 1,597 Web service hosts.<br>
+        3. "node_list.txt" (6 KB): This file decribes the ID and address of each PlanetLab node.<br>
+        4. "WS_list.txt" (39 KB): This file decribes the ID and address of each Web service.<br>
+        5. "readme.txt" (2 KB): This file decribes the dataset in detail.
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; WS-DREAM 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -76,9 +76,9 @@
                     <p>Service-based cloud applications are typically built on component services to fulfill certain application logic. To meet quality-of-service (QoS) guarantees, these applications have to become resilient against the QoS variations of their component services. Runtime service adaptation has been recognized as a key solution to achieve this goal. To make timely and accurate adaptation decisions, effective QoS prediction is desired to obtain the QoS values of component services. However, current research has focused mostly on QoS prediction of the working services that are being used by a cloud application, but little on QoS prediction of candidate services that are also important for making adaptation decisions. To bridge this gap, in this paper, we propose a novel QoS prediction approach, namely adaptive matrix factorization (AMF), which is inspired from the collaborative filtering model used in recommender systems. Specifically, our AMF approach extends conventional matrix factorization into an online, accurate, and scalable model by employing techniques of data transformation, online learning, and adaptive weights. Comprehensive experiments have been conducted based on a real-world large-scale QoS dataset of Web services to evaluate our approach. The evaluation results provide good demonstration for our approach in achieving accuracy, efficiency, and scalability.</p>
 
                     <p>Read more from our paper: <br>
-                    ------------------------------<br>
+                       -------------------------------<br>
      
-                    Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<strong>Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation</strong>," in Proc. of IEEE International Conference on Distributed Computing Systems (<strong>ICDCS</strong>), 2014.
+                    Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<strong>Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation</strong>," in <i>Proc. of IEEE International Conference on Distributed Computing Systems (<strong>ICDCS</strong>)</i>, 2014.
                     [<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014.pdf" target="_blank">Paper</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_sup.pdf" target="_blank">Supplemental report</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_slides.pptx" target="_blank">Slides</a>]</p>
 
         <h2 class="section-heading">Dataset Release</h2>
@@ -88,12 +88,11 @@
         <a href="http://wsdream.github.io/dataset/wsrec_dataset2" target="_blank" class="button">Download dataset</a>
         
         List of contents of the dataset<br>
-        ----------------------------------------------------------------------------<br>
+        -----------------------------------<br>
 
-        rtData&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- response-time values of 4,500 Web services when invoked by 142 service users over 64 time slices.<br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Response Time (sec)<br>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 98    4352    33    0.311<br>
-        tpData&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- throughput values of 4,500 Web services when invoked by 142 
-                      service users in 64 time slices.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Throughput (kbps)<br>                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 91    1196    62    32.88<br>
-        readme&nbsp;&nbsp;&nbsp; - descriptions of the dataset.
+        rtdata.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- response-time records<br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Response Time (sec)<br>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 98    4352    33    0.311<br>
+        tpdata.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- throughput records<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Throughput (kbps)<br>                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 91    1196    62    32.88<br>
+        readme.txt&nbsp;&nbsp;&nbsp; - descriptions of the dataset
 
                     <h2 class="section-heading">Code Release</h2>
 
