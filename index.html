@@ -6,22 +6,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="WS-DREAM: Open Datasets and Source Code for Web Service Research">
+    <meta name="author" content="WS-DREAM Team">
 
-    <title>WS-DREAM Research</title>
+    <title>WS-DREAM: Open Datasets and Source Code for Web Service Research</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <link href="css/landing-page.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Arimo:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,97 +36,442 @@
 
 <body>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#">WS-DREAM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#dataset">Dataset</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#code">Code</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publication">Publication</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bibliography">Bibliography</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="intro-message">
+                        <img class="img-responsive img-circle center-block" src="img/wsdream_logo.png" alt=""><br>
                         <h1>WS-DREAM</h1>
-                        <hr class="small">
-                        <span class="subheading">Web Service Research<br>The Chinese University of Hong Kong</span>
+                        <h3>Open Datasets and Source Code <br>for Web Service Research</h3>
+                        <hr class="intro-divider">
+                        <h3>The Chinese University of Hong Kong</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <section id="intro" class="bg-light-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">     
+                    <p>WS-<strong>DREAM</strong> is a <strong>D</strong>istributed <strong>RE</strong>liability <strong>A</strong>ssessment <strong>M</strong>echanism for Web services, allowing users to carry out reliability and quality assessment of Web services in a collaborative way. This website is to disseminate our research results as well as release open datasets and source code for Web service research. With both datasets and source code publicly released, our WS-DREAM repository would allow ease of reproducing the existing approaches and flexibility of extending new ones, which hopefully inspires more research efforts in the <a target="_blank" href="http://www.servicessociety.org/en/">Service Society</a>.</p>
+                    <p><strong>+</strong> Our publications about WS-DREAM have been cited <a target="_blank" href="archive/citation.html">2000+ times</a> in total.</p>
+                    <p><strong>+</strong> Our datasets have been downloaded by <a target="_blank" href="archive/organization.html">350+ research organizations</a> globally, and have been used in <a target="_blank" href="archive/biblist.html">200+ papers</a>.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+
+    <section id="dataset" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Dataset
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                    
+                    <p>Our WS-DREAM repository maintains a set of QoS (Quality-of-Service) datasets which are collected from real-world Web services. The datasets are publicly released to hopefully facilitate valuable research in service computing. Please feel free to contact us if you have any comments or questions. We would love to hear from researchers on ideas to improve the WS-DREAM datasets.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://wsdream.github.io/dataset" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Datasets
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+
+    <section id="code" class="bg-light-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Code
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                    <p>We have implemented 30+ existing QoS prediction approaches for Web service recommendation, and released the source code in our GitHub repository. Especially, for future research on QoS prediction of Web services, you do not need to write your own program from scratch. The WS-DREAM framework can be easily extended to new implementations. Please feel free to contact us if you have any comments or questions regarding the code. We also appreciate any contributions from you.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="https://github.com/wsdream/WS-DREAM" class="btn btn-lg btn-outline">
+                        <i class="fa fa-github fa-fw"></i> Folk GitHub Repo
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>	
+
+
+    <section id="publication" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Publication
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                    <p>Ten representative publications about WS-DREAM: [<a target="_blank" href="http://wsdream.github.io/publication">Full list</a>]</p>
+                    <ol>                     
+                        <li>
+                            <p>Xi Chen, Zibin Zheng, Qi Yu, Michael R. Lyu, "<a target="_blank" href="https://www.ist.rit.edu/~qyu/papers/Yu_TPDS14.pdf">Web Service Recommendation via Exploiting Location and QoS Information</a>," <i>IEEE Transactions on Parallel and Distributed Systems (TPDS)</i>, 2014.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Yilei Zhang, Michael R. Lyu, "<a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6357180">Investigating QoS of Real-World Web Services</a>," <i>IEEE Transactions on Services Computing (TSC)</i>, 2014.</p>
+                        </li>
+                        <li>
+                            <p>Jieming Zhu, Pinjia He, Zibin Zheng, Michael R. Lyu, "<a target="_blank" href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014.pdf">Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation</a>," in <i>Proc. of IEEE International Conference on Distributed Computing Systems (ICDCS)</i>, 2014.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Michael R. Lyu, "<a target="_blank" href="https://pdfs.semanticscholar.org/0fd4/9277e7ad0b0ef302f05ebcca772d28e34292.pdf">Personalized Reliability Prediction of Web Services</a>," <i>ACM Transactions on Software Engineering and Methodology (TOSEM)</i>, 2013.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Xinmiao Wu, Yilei Zhang, Michael R. Lyu, Jianmin Wang, "<a target="_blank" href="http://ieeexplore.ieee.org/document/6320550/">QoS Ranking Prediction for Cloud Services</a>," <i>IEEE Transactions on Parallel and Distributed Systems (TPDS)</i>, 2013.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Hao Ma, Michael R. Lyu, Irwin King, "<a target="_blank" href="http://ieeexplore.ieee.org/document/5674010/">QoS-Aware Web Service Recommendation by Collaborative Filtering</a>," <i>IEEE Transactions on Services Computing (TSC)</i>, 2013.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Michael R. Lyu, "<a target="_blank" href="http://dl.acm.org/citation.cfm?id=1806809">Collaborative Reliability Prediction of Service-Oriented Systems</a>," in <i>Proc. of ACM/IEEE International Conference on Software Engineering (ICSE)</i>, 2010. [<strong>ACM SIGSOFT Distinguished Paper Award</strong>]</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Yilei Zhang, Michael R. Lyu, "<a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5552800">Distributed QoS Evaluation for Real-World Web Services</a>," in <i>Proc. of IEEE International Conference on Web Services (ICWS)</i>, 2010. [<strong>Best Student Paper Award</strong>]</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Hao Ma, Michael R. Lyu, Irwin King, "<a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5175854">WSRec: A Collaborative Filtering based Web Service Recommender System</a>," in <i>Proc. of IEEE International Conference on Web Services (ICWS)</i>, 2009.</p>
+                        </li>
+                        <li>
+                            <p>Zibin Zheng, Michael R. Lyu, "<a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4630108">WS-DREAM: A distributed Reliability Assessment Mechanism for Web Services</a>," in <i>Proc. of IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)</i>, 2008.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>  
+
+    <section id="bibliography" class="bg-light-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Bibliography
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                    
+                    <p>Five representative publications that use or cite WS-DREAM: [<a target="_blank" href="http://wsdream.github.io/bibliography">Full list</a>]</p>
+                        <ul>
+                            <li>
+                                <p>You Ma, Shangguang Wang, Patrick C.K. Hung, Ching-Hsien Hsu, Qibo Sun, and Fangchun Yang, "A Highly Accurate Prediction Algorithm for Unknown Web Service QoS Values," IEEE Trans. Services Computing (TSC), 2016.</p>
+                            </li>
+                            <li>
+                                <p>Kenneth K. Fletcher, and Xiaoqing Liu, "A Collaborative Filtering Method for Personalized Preference-Based Service Recommendation," in Proc. of IEEE International Conference on Web Services (ICWS), 2015.</p>
+                            </li>
+                            <li>
+                                <p>Wancai Zhang, Hailong Sun, Xudong Liu, and Xiaohui Guo, "<a target="_blank" href="http://wwwconference.org/proceedings/www2014/proceedings/p585.pdf">Temporal QoS-Aware Web Service Recommendation via Non-negative Tensor Factorization</a>," in <i>Proc. of International World Wide Web Conference (WWW)</i>, 2014.</p>
+                            </li>
+                            <li>
+                                <p>Marin Silic, Goran Delac, and Sinisa Srbljic, "<a target="_blank" href="http://dl.acm.org/citation.cfm?id=2491424">Prediction of Atomic Web Services Reliability Based on K-Means Clustering</a>," in <i>Proc. of Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE)</i>, 2013.</p>
+                            </li>
+                            <li>
+                                <p>Wei Lo, Jianwei Yin, Shuiguang Deng, Ying Li, and Zhaohui Wu, "<a target="_blank" href="http://ieeexplore.ieee.org/document/6274140/">An Extended Matrix Factorization Approach for QoS Prediction in Service Selection</a>," in <i>Proc. of International Conference on Services Computing (SCC)</i>, 2012. [<strong>Best Student Paper Award</strong>]</p>
+                            </li>
+                        </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section> 
+
+
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Team
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p>Project Leaders:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 col-lg-offset-1"> 
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="team-member">
+                            <img src="img/team/lyu.jpg" class="img-responsive img-circle" alt="">
+                            <h4><a target="_blank" href="http://www.cse.cuhk.edu.hk/lyu/">Michael R. Lyu</a></h4>
+                            <p class="text-muted">Professor, CUHK<br>ACM Fellow, IEEE Fellow, AAAS Fellow</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/team/zibin.jpg" class="img-responsive img-circle" alt="">
+                            <h4><a target="_blank" href="http://www.zibinzheng.com">Zibin Zheng</a></h4>
+                            <p class="text-muted">Associate Professor, Sun Yat-sen University<br>Postdoc & Ph.D., CUHK, 2007-2014</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/team/jmzhu.jpg" class="img-responsive img-circle" alt="">
+                            <h4><a target="_blank" href="http://jiemingzhu.github.io">Jieming Zhu</a></h4>
+                            <p class="text-muted">Postdoc & Ph.D., CUHK<br>2011-2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p>Project Members:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-lg-offset-2">
+                    <div class="team-member">
+                        <img src="img/team/ylzhang.jpg" class="img-responsive img-circle" alt="">
+                        <h4><a target="_blank" href="https://www.linkedin.com/in/zhangrocky">Yilei Zhang</a></h4>
+                        <p class="text-muted">Ph.D., CUHK, 2013</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/jlxu.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jianlong Xu</h4>
+                        <p class="text-muted">Postdoc, CUHK<br>2013-2015</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/ykang.jpg" class="img-responsive img-circle" alt="">
+                        <h4><a target="_blank" href="https://wiki.cse.cuhk.edu.hk/user/ykang/">Yu Kang</a></h4>
+                        <p class="text-muted">Ph.D., CUHK, 2016</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/pjhe.jpg" class="img-responsive img-circle" alt="">
+                        <h4><a target="_blank" href="http://appsrv.cse.cuhk.edu.hk/~pjhe/">Pinjia He</a></h4>
+                        <p class="text-muted">Ph.D. Candidate, CUHK</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p>Visiting Researchers:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-lg-offset-1">
+                    <div class="team-member">
+                        <img src="img/team/xieqi.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Qi Xie</h4>
+                        <p class="text-muted">Southwest University for Nationalities<br>Oct. 2015-Sep. 2016</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/liyang.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Yang Li</h4>
+                        <p class="text-muted">Sun Yat-sen University<br>July.-Aug. 2015</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/taoguanhong.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Guanhong Tao</h4>
+                        <p class="text-muted">Sun Yat-sen University<br>July.-Aug. 2015</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/leitao.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tao Lei</h4>
+                        <p class="text-muted">Beijing University of Posts and Telecommunications<br>July.-Aug. 2015</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/ywan.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Yao Wan</h4>
+                        <p class="text-muted">Zhejiang University<br>Dec. 2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">         
+                <div class="col-sm-2 col-lg-offset-1">
+                    <div class="team-member">
+                        <img src="img/team/yinghaochao.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Haocao Ying</h4>
+                        <p class="text-muted">Zhejiang University<br>Dec. 2014</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/bqcao.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Buqing Cao</h4>
+                        <p class="text-muted">Hunan University of Science and Tecnology<br>Mar.-Sep. 2014</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/wuchen.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Chen Wu</h4>
+                        <p class="text-muted">Zhejiang University<br>Jul.-Aug. 2014</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/xiongyuwen.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Yuwen Xiong</h4>
+                        <p class="text-muted">Zhejiang University<br>Jul.-Aug. 2014</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/luyifei.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Yifei Lu</h4>
+                        <p class="text-muted">Zhejiang University<br>Jul.-Aug. 2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-sm-2 col-lg-offset-1">
+                    <div class="team-member">
+                        <img src="img/team/liangchen.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Liang Chen</h4>
+                        <p class="text-muted">Zhejiang University<br>Mar.-Sep. 2012</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="img/team/weiwei.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Weiwei Qiu</h4>
+                        <p class="text-muted">Zhejiang University<br>Mar.-Sep. 2012</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>  
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="PPCF.html">
-                        <h2 class="post-title">
-                            [ICWS'15] A Privacy-Preserving QoS Prediction Framework for Web Service Recommendation
-                        </h2>
-                        <h3 class="post-subtitle">
-                            This is the first work to cope with the privacy concerns
-for QoS-based Web service recommendation. We propose a simple yet effective privacy-preserving
-framework.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="https://github.com/jimzhu">Jamie Zhu</a> on March 16, 2015</p>
+	<section class="banner">
+        <div class="container banner-content">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 text-center">
+                    <h2>Contribute to WS-DREAM:</h2>
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="AMF.html">
-                        <h2 class="post-title">
-                            [ICDCS'14] Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation
-                        </h2>
-                        <h3 class="post-subtitle">
-                            This is the first work aimed for QoS prediction of candidate services, which can assist selection of optimal candidate services during runtime service adaptation.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="https://github.com/jimzhu">Jamie Zhu</a> on April 05, 2014</p>
+                <div class="col-lg-1 col-lg-offset-1">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://github.com/wsdream" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="DR2.html">
-                        <h2 class="post-title">
-                            [CLOUD'13] DR<sup>2</sup>: Dynamic Request Routing for Tolerating Latency Variability in Online Cloud Applications
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We characterize the latency variability problem in cloud
-computing systems and propose a dynamic request routing
-framework, DR<sup>2</sup>, to tolerate this variability for building consistently
-low-latency cloud applications.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="https://github.com/jimzhu">Jamie Zhu</a> on May 10, 2013</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="WSP.html">
-                        <h2 class="post-title">
-                            [ICWS'13] WSP: A Network Coordinate based Web Service Positioning Framework for Response Time Prediction
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We propose a Web service positioning (WSP)
-framework for response time prediction by combining
-advantages of network coordinate based approaches
-and CF-based approaches. 
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="https://github.com/jimzhu">Jamie Zhu</a> on April 13, 2012</p>
-                </div>
-            </div>
+            </div> 
         </div>
-    </div>
+        <div class="overlay"></div>   
+        <!-- /.container -->
+    </section>
+    <!-- /.banner -->
 
-    <hr>
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p class="copyright text-muted">Copyright &copy; WS-DREAM 2012-2016</p>
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#dataset">Dataset</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#code">Code</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#publication">Publication</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#bibliography">Bibliography</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; WS-DREAM Team 2016. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
