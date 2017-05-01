@@ -6,20 +6,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="WS-DREAM: Open Datasets and Source Code for Web Service Research">
+    <meta name="author" content="WS-DREAM Team">
 
     <title>AMF: Adaptive Matrix Factorization for Online QoS Prediction</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/clean-blog-plus.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Arimo:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -40,82 +45,154 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="index.html">WS-DREAM</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="http://wsdream.github.io">WS-DREAM</a>
             </div>
 
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header">
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-10 col-lg-offset-1">
                     <div class="post-heading">
                         <h1>Adaptive Matrix Factorization for Online QoS Prediction</h1>
                         <h2 class="subheading"></h2>
-                        <span class="meta"><a href="http://jiemingzhu.github.io" target="_blank">Jieming Zhu</a>,&nbsp;&nbsp;<a href="https://www.cse.cuhk.edu.hk/~pjhe" target="_blank">Pinjia He</a>,&nbsp;&nbsp;<a href="https://wiki.cse.cuhk.edu.hk/user/zbzheng/" target="_blank">Zibin Zheng</a>,&nbsp;&nbsp;and <a href="http://www.cse.cuhk.edu.hk/lyu/" target="_blank">Michael R. Lyu</a><br><br>Department of Computer Science and Engineering<br>The Chinese University of Hong Kong</span>
+                        <span class="meta"><a href="http://jiemingzhu.github.io" target="_blank">Jieming Zhu</a>,&nbsp;&nbsp;<a href="https://www.cse.cuhk.edu.hk/~pjhe" target="_blank">Pinjia He</a>,&nbsp;&nbsp;<a href="http://www.zibinzheng.com" target="_blank">Zibin Zheng</a>,&nbsp;&nbsp;and <a href="http://www.cse.cuhk.edu.hk/lyu/" target="_blank">Michael R. Lyu</a><br><br>Department of Computer Science and Engineering<br>The Chinese University of Hong Kong</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
 
-    <!-- Post Content -->
-    <article>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <section id="intro" class="bg-light-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Cloud applications built on service-oriented architectures generally integrate a number of component services to fulfill certain application logic. The changing cloud environment highlights the need for these applications to become resilient against the QoS variations of their component services so that end-to-end quality-of-service (QoS) can be guaranteed. Runtime service adaptation is a key technique to achieve this goal. To support timely and accurate adaptation decisions, effective and efficient QoS prediction is needed to obtain real-time QoS information of component services. However, current research has focused mostly on QoS prediction of the working services that are being used by a cloud application, but little on predicting QoS values of the candidate services that are equally important in determining optimal adaptation actions. To tackle this problem, we propose an online QoS prediction approach for candidate services, namely adaptive matrix factorization (AMF). AMF is inspired from the collaborative filtering techniques widely used in recommender systems, but significantly extends the conventional matrix factorization model with techniques of data transformation, online learning, and adaptive weights, in order to address the unique challenges posed by runtime service adaptation. Comprehensive experiments, as well as a case study, have been conducted based on a real-world QoS dataset of Web services (with over 40 million QoS records) to evaluate our AMF approach. The evaluation results demonstrate the capability of AMF in achieving accuracy, efficiency, and scalability.</p>
-
-                    <p>More information about this work is available at: 
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p>Cloud applications built on service-oriented architectures generally integrate a number of component services to fulfill certain application logic. The changing cloud environment highlights the need for these applications to keep resilient against QoS variations of their component services so that end-to-end quality-of-service (QoS) can be guaranteed. Runtime service adaptation is a key technique to achieve this goal. To support timely and accurate adaptation decisions, effective and efficient QoS prediction is needed to obtain real-time QoS information of component services. However, current research has focused mostly on QoS prediction of working services that are being used by a cloud application, but little on predicting QoS values of candidate services that are equally important in determining optimal adaptation actions. In this work, we propose an adaptive matrix factorization (namely AMF) approach to perform online QoS prediction for candidate services. AMF is inspired from the widely-used collaborative filtering techniques in recommender systems, but significantly extends the conventional matrix factorization model with new techniques of data transformation, online learning, and adaptive weights. Comprehensive experiments, as well as a case study, have been conducted based on a real-world QoS dataset of Web services (with over 40 million QoS records). The evaluation results demonstrate AMF’s superiority in achieving accuracy, efficiency, and robustness, which are essential to enable optimal runtime service adaptation.<br><br></p>
+                    
+                    <p>Read more information about AMF from our publications:
                     <ul>
                     <li>
-                    <p>Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<strong>Online QoS Prediction for Runtime Service Adaptation via Adaptive Matrix Factorization</strong>," in <i>submission</i>, 2016.
+                    <p>Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<a href="http://jiemingzhu.github.io/pub/jmzhu_tpds2017.pdf" target="_blank">Online QoS Prediction for Runtime Service Adaptation via Adaptive Matrix Factorization</a>," <i>IEEE Transactions on Parallel and Distributed Systems (<strong>TPDS</strong>)</i>, 2017.
                     </p>
                     </li>
                     <li>
-                    Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<strong>Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation</strong>," in <i>Proc. of IEEE International Conference on Distributed Computing Systems (<strong>ICDCS</strong>)</i>, 2014.
-                    [<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014.pdf" target="_blank">Paper</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_sup.pdf" target="_blank">Supplemental report</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_slides.pptx" target="_blank">Slides</a>]
+                    Jieming Zhu, Pinjia He, Zibin Zheng, and Michael R. Lyu, "<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014.pdf" target="_blank">Towards Online, Accurate, and Scalable QoS Prediction for Runtime Service Adaptation</a>," in <i>Proc. of IEEE International Conference on Distributed Computing Systems (<strong>ICDCS</strong>)</i>, 2014.
+                    [<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_sup.pdf" target="_blank">Supplemental report</a>][<a href="http://jiemingzhu.github.io/pub/jmzhu_icdcs2014_slides.pptx" target="_blank">Slides</a>]
                     </li>
-                    </ul></p>
+                    </ul>
+                    </p>
+                </div>
+            </div>
 
-        <h2 class="section-heading">Dataset Release</h2>
+        </div>
+        <!-- /.container -->
 
-        <p>This dataset, as one of our <a href="https://github.com/wsdream/wsdream-dataset" target="_blank">WS-DREAM datasets</a>, offers real-world QoS data of Web services for future research. The dataset consists of about 40.9 million QoS records, with response time and throughput values recorded during the service invocations between 142 users and 4,500 Web services over 64 consecutive time slices, at an interval of 15 minutes. Specifically, the 142 users are set on <a href="https://www.planet-lab.org" target="_blank">PlanetLab</a> (a global open platform for distributed systems research) nodes distributed in 22 countries, and the services are 4,500 publicly accessible real-world Web services crawled from the Internet, which are hosted at 57 countries.</p>
-        <a href="http://wsdream.github.io/dataset/wsdream_dataset2.html" target="_blank" class="button">Download dataset</a>
-        
-        List of contents of the dataset<br>
-        -----------------------------------<br>
+    </section>
 
-        rtdata.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- response-time records<br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Response Time (sec)<br>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 98    4352    33    0.311<br>
-        tpdata.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- throughput records<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data format: User ID | Service ID | Time Slice ID | Throughput (kbps)<br>                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: 91    1196    62    32.88<br>
-        readme.txt&nbsp;&nbsp;&nbsp; - descriptions of the dataset
 
-                    <h2 class="section-heading">Code Release</h2>
+    <section id="dataset" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Dataset
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
 
-                    <p>The source code of our implementations on AMF (in Python or Matlab) has been publicly released. You can view it on our GitHub repository. We also re-implement the existing approaches for comparison purposes, which are available here: <a href="https://github.com/wsdream/WS-DREAM/tree/master/benchmarks/time-aware/Baseline">Average</a>, <a href="https://github.com/wsdream/WS-DREAM/tree/master/benchmarks/time-aware/UIPCC">UIPCC, <a href="https://github.com/wsdream/WS-DREAM/tree/master/benchmarks/time-aware/PMF">PMF, <a href="https://github.com/wsdream/WS-DREAM/tree/76b35a6a21c5d209a1897c4719a5e32a3e79c782/Time-aware/WSPred">WSPred, <a href="https://github.com/wsdream/WS-DREAM/tree/76b35a6a21c5d209a1897c4719a5e32a3e79c782/Time-aware/NTF">NTF. </p>
-        <a href="https://github.com/wsdream/AMF" target="_blank" class="githubbutton">View AMF <br>on GitHub</a>
+                    <p>This dataset, as one of our <a href="https://github.com/wsdream/wsdream-dataset" target="_blank">WS-DREAM datasets</a>, offers real-world QoS data of Web services for future research. The dataset consists of about 40.9 million QoS records, with response time and throughput values recorded during the service invocations between 142 users and 4,500 Web services over 64 consecutive time slices, at an interval of 15 minutes. Specifically, the 142 users are set on <a href="https://www.planet-lab.org" target="_blank">PlanetLab</a> (a global open platform for distributed systems research) nodes distributed in 22 countries, and the services are 4,500 publicly accessible real-world Web services crawled from the Internet, which are hosted at 57 countries.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://wsdream.github.io/dataset/wsdream_dataset2.html" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Datasets
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+
+    <section id="code" class="bg-light-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="section-heading">Code
+                    <hr class="section-heading-spacer"></h3>
+                    <div class="clearfix"></div>
+                    <p>The source code of our implementations on AMF (in Python or Matlab) has been publicly released. You can fork it on our GitHub repository. We have implemented 30+ other existing QoS prediction approaches for Web service recommendation in the WS-DREAM project. The code is well structured and can be easily extended to new implementations. Please feel free to contact us if you have any comments or questions regarding the code. We also appreciate any contributions from you.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="https://github.com/wsdream/AMF" class="btn btn-lg btn-outline">
+                        <i class="fa fa-github fa-fw"></i> Fork GitHub Repo
+                    </a>
+                    <br><br><br><br>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+
+
+    <section class="banner">
+        <div class="container banner-content">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 text-center">
+                    <h2>Contribute to WS-DREAM:</h2>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://github.com/wsdream" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </article>
-
-    <hr>
+        <div class="overlay"></div>
+        <!-- /.container -->
+    </section>
+    <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p class="copyright text-muted">Copyright &copy; WS-DREAM 2016</p>
+                <div class="col-lg-12">
+                    <p class="copyright text-muted small">Copyright &copy; WS-DREAM Team 2017. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
